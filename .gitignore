@@ -1,0 +1,27 @@
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+
+# ---- 生成的产物（管线可重建，不入库）----
+# 成片与单镜视频：render_video_only.py / make_final.py 产出
+renders/
+# 抽帧 / 审查图：ffmpeg 手动抽查产出
+frames/
+# manim 分片渲染缓存
+cache/
+# plan.py 生成的时间轴
+timing.json
+# TTS 合成音频与缓存索引（synth.py 产出；wav.bak1x 为 1.0 语速备份）
+tts/wav/
+tts/wav.bak1x/
+tts/manifest.json
+tts/manifest.bak1x.json
+
+# ---- 日志与备份 ----
+*.log
+*.bak
+
+# ---- 编辑器 ----
+.vscode/
+.idea/

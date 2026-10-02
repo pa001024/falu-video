@@ -1,0 +1,23 @@
+directories:
+  base: "E:/dev/dna-builder/.tmp/falu-video"
+  subdirs:
+    output: "renders"
+    raster_images: "assets"
+    vector_images: "assets"
+    sounds: "audio"
+    data: "data"
+    downloads: "downloads"
+    latex_cache: "latex_cache"
+  cache: "E:/dev/dna-builder/.tmp/falu-video/cache"
+camera:
+  resolution: (1920, 1080)
+  background_color: "#0A0C11"
+  fps: 30
+file_writer:
+  ffmpeg_bin: "E:/soft/GPT-SoVITS-v2/runtime/ffmpeg/bin/ffmpeg.exe"
+  video_codec: "libx264"
+  pixel_format: "yuv420p"
+  crf: 18
+text:
+  font: "HarmonyOS Sans SC"
+  alignment: "LEFT"
